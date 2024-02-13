@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body class="bg-black">
     <div class="flex container mx-auto text-white">
-
       <div class="first w-full flex flex-col items-center bg-black">
         <div class="logo mt-5 invert">
           <svg
@@ -29,33 +29,51 @@
         </div>
 
         <div class="sidebar">
-          <ul class="flex my-5 flex-col">
-            <li class="flex mx-5 my-3 items-center gap-4">
-              <span class="material-symbols-outlined"> home </span>
+          <ul class="flex my-5 text-3xl flex-col">
+            <li
+              class="flex mx-5 my-3 items-center gap-4 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-4xl"> home </span>
               Home
             </li>
-            <li class="flex mx-5 my-3 gap-4 items-center">
-              <span class="material-symbols-outlined"> search </span>
+            <li
+              class="flex mx-5 my-3 items-center gap-4 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-4xl"> search </span>
               Explore
             </li>
-            <li class="flex mx-5 my-3 gap-4 items-center">
-              <span class="material-symbols-outlined"> notifications </span>
+            <li
+              class="flex mx-5 my-3 items-center gap-4 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-4xl">
+                notifications
+              </span>
               Notifications
             </li>
-            <li class="flex mx-5 my-3 gap-4 items-center">
-              <span class="material-symbols-outlined"> mail </span>
+            <li
+              class="flex mx-5 my-3 items-center gap-4 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-4xl"> mail </span>
               Message
             </li>
-            <li class="flex mx-5 my-3 gap-4 items-center">
-              <span class="material-symbols-outlined"> list_alt </span>
+            <li
+              class="flex mx-5 my-3 items-center gap-4 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-4xl"> list_alt </span>
               List
             </li>
-            <li class="flex mx-5 my-3 gap-4 items-center">
-              <span class="material-symbols-outlined"> group </span>
+            <li
+              class="flex mx-5 my-3 items-center gap-4 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-4xl"> group </span>
               Profile
             </li>
-            <li class="flex mx-5 my-3  gap-4 items-center">
-              <span class="material-symbols-outlined"> more_horiz </span>
+            <li
+              class="flex mx-5 my-3 items-center gap-4 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-4xl">
+                more_horiz
+              </span>
 
               More
             </li>
@@ -70,7 +88,111 @@
       </div>
 
       <div class="second w-full border border-x-white bg-black">2</div>
-      <div class="third w-full bg-black">3</div>
+      <div class="third w-full bg-black">
+        <div class="search m-5 w-3/4">
+          <input
+            type="text"
+            class="w-full bg-gray-950 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+            placeholder="search"
+          />
+        </div>
+        <div class="what rounded-md py-1 w-3/4 bg-gray-950 mt-7 mx-5">
+          <h1 class="text-xl my-2 pl-5 font-bold">whats happening</h1>
+          <div class="items my-3 pl-5 hover:bg-gray-900 hover:cursor-pointer">
+            <div class="text-gray-700 text-sm">Trending in India</div>
+            <div class="font-medium">Badal</div>
+            <div class="text-gray-700 text-sm">22.9k post</div>
+          </div>
+          <div class="items my-3 pl-5 hover:bg-gray-900 hover:cursor-pointer">
+            <div class="text-gray-700 text-sm">Trending in India</div>
+            <div class="font-medium">Sharma</div>
+            <div class="text-gray-700 text-sm">22.9k post</div>
+          </div>
+          <div class="items my-3 pl-5 hover:bg-gray-900 hover:cursor-pointer">
+            <div class="text-gray-700 text-sm">Trending in India</div>
+            <div class="font-medium">138</div>
+            <div class="text-gray-700 text-sm">22.9k post</div>
+          </div>
+          <div class="items my-3 pl-5 hover:bg-gray-900 hover:cursor-pointer">
+            <div class="text-gray-700 text-sm">Trending in India</div>
+            <div class="font-medium">Lorem ipsum dolor sit.</div>
+            <div class="text-gray-700 text-sm">22.9k post</div>
+          </div>
+          <div class="items py-3 pl-5 hover:bg-gray-900 hover:cursor-pointer">
+            <a href="" class="font-normal text-blue-500 shadow-none"
+              >show more</a
+            >
+          </div>
+        </div>
+        <div class="who rounded-md py-1 w-3/4 bg-gray-950 mt-7 mx-5">
+          <h1 class="text-xl my-2 mb-4 pl-5 font-bold">who to follow</h1>
+          <div class="items flex justify-between my-3 py-2 pl-5  hover:bg-gray-900 hover:cursor-pointer">
+            <div class="w-9 h-9 flex items-end pt-2 just">
+              <img
+                src="https://imgs.search.brave.com/BaBUcKps5DirVcYQooCQGOyBhvdLD9gYBb4pRCDOQ4s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jLnNh/YXZuY2RuLmNvbS9h/cnRpc3RzL0JhZGFs/X0t1bWFyXzIwMjAw/MjA1MTAwMDMzXzUw/MHg1MDAuanBn"
+                alt="Profile pic"
+              />
+              <div class="text ml-4">
+                <div class="font-medium">Badal sharm</div>
+                <div class="text-gray-700 text-sm">@badalsharma138</div>
+              </div>
+            </div>
+
+            <div class="btn w-1/4 pr-2">
+              <button
+                class="text-black w-full font-normal bg-white rounded-full"
+              >
+                follow
+              </button>
+            </div>
+          </div>
+          <div class="items flex justify-between my-3 py-2 pl-5  hover:bg-gray-900 hover:cursor-pointer">
+            <div class="w-9 h-9 flex items-end pt-2 just">
+              <img
+                src="https://imgs.search.brave.com/BaBUcKps5DirVcYQooCQGOyBhvdLD9gYBb4pRCDOQ4s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jLnNh/YXZuY2RuLmNvbS9h/cnRpc3RzL0JhZGFs/X0t1bWFyXzIwMjAw/MjA1MTAwMDMzXzUw/MHg1MDAuanBn"
+                alt="Profile pic"
+              />
+              <div class="text ml-4">
+                <div class="font-medium">Badal sharm</div>
+                <div class="text-gray-700 text-sm">@badalsharma138</div>
+              </div>
+            </div>
+
+            <div class="btn w-1/4 pr-2">
+              <button
+                class="text-black w-full font-normal bg-white rounded-full"
+              >
+                follow
+              </button>
+            </div>
+          </div>
+          <div class="items flex justify-between my-3  py-2 pl-5  hover:bg-gray-900 hover:cursor-pointer">
+            <div class="w-9 h-9 flex items-end pt-2 just">
+              <img
+                src="https://imgs.search.brave.com/BaBUcKps5DirVcYQooCQGOyBhvdLD9gYBb4pRCDOQ4s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jLnNh/YXZuY2RuLmNvbS9h/cnRpc3RzL0JhZGFs/X0t1bWFyXzIwMjAw/MjA1MTAwMDMzXzUw/MHg1MDAuanBn"
+                alt="Profile pic"
+              />
+              <div class="text ml-4">
+                <div class="font-medium">Badal sharm</div>
+                <div class="text-gray-700 text-sm">@badalsharma138</div>
+              </div>
+            </div>
+
+            <div class="btn w-1/4 pr-2">
+              <button
+                class="text-black w-full font-normal bg-white rounded-full"
+              >
+                follow
+              </button>
+            </div>
+          </div>
+          <div class="items py-2 pl-5 hover:bg-gray-900 hover:cursor-pointer">
+            <a href="" class="font-normal text-blue-500 shadow-none"
+              >show more</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
